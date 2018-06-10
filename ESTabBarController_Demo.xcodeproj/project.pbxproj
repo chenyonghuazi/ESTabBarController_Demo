@@ -7,14 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95E1C3B8F9ED4E9C38AA5ED9 /* Pods_ESTabBarController_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8627B82853790B4BA3FD5436 /* Pods_ESTabBarController_Demo.framework */; };
 		E81FA86620CD9CD70074F7D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA86520CD9CD70074F7D5 /* AppDelegate.swift */; };
 		E81FA86820CD9CD70074F7D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA86720CD9CD70074F7D5 /* ViewController.swift */; };
 		E81FA86B20CD9CD70074F7D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81FA86920CD9CD70074F7D5 /* Main.storyboard */; };
 		E81FA86D20CD9CD90074F7D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81FA86C20CD9CD90074F7D5 /* Assets.xcassets */; };
 		E81FA87020CD9CD90074F7D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81FA86E20CD9CD90074F7D5 /* LaunchScreen.storyboard */; };
+		E81FA87F20CDA13D0074F7D5 /* ExampleBackgroundContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA87820CDA13D0074F7D5 /* ExampleBackgroundContentView.swift */; };
+		E81FA88020CDA13D0074F7D5 /* ExampleBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA87920CDA13D0074F7D5 /* ExampleBouncesContentView.swift */; };
+		E81FA88120CDA13D0074F7D5 /* ExampleAnimateTipsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA87A20CDA13D0074F7D5 /* ExampleAnimateTipsContentView.swift */; };
+		E81FA88220CDA13D0074F7D5 /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA87B20CDA13D0074F7D5 /* ExampleBasicContentView.swift */; };
+		E81FA88320CDA13D0074F7D5 /* ExampleHighlightableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA87C20CDA13D0074F7D5 /* ExampleHighlightableContentView.swift */; };
+		E81FA88420CDA13D0074F7D5 /* ExampleTipsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA87D20CDA13D0074F7D5 /* ExampleTipsContentView.swift */; };
+		E81FA88520CDA13D0074F7D5 /* ExampleIrregularityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA87E20CDA13D0074F7D5 /* ExampleIrregularityContentView.swift */; };
+		E81FA88720CDA1890074F7D5 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81FA88620CDA1890074F7D5 /* pop.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		E81FA88A20CDABDA0074F7D5 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81FA88620CDA1890074F7D5 /* pop.framework */; };
+		E81FA88B20CDABDA0074F7D5 /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E81FA88620CDA1890074F7D5 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E81FA88F20CDBB8E0074F7D5 /* welcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA88E20CDBB8E0074F7D5 /* welcomeScreen.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E81FA88C20CDABDA0074F7D5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E81FA88B20CDABDA0074F7D5 /* pop.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		24206C14F6136208F57B4021 /* Pods-ESTabBarController_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESTabBarController_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESTabBarController_Demo/Pods-ESTabBarController_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		63B85D9CA1F49B9254D95650 /* Pods-ESTabBarController_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESTabBarController_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESTabBarController_Demo/Pods-ESTabBarController_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		8627B82853790B4BA3FD5436 /* Pods_ESTabBarController_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESTabBarController_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81FA86220CD9CD70074F7D5 /* ESTabBarController_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESTabBarController_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81FA86520CD9CD70074F7D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E81FA86720CD9CD70074F7D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +51,15 @@
 		E81FA86C20CD9CD90074F7D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E81FA86F20CD9CD90074F7D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E81FA87120CD9CD90074F7D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81FA87820CDA13D0074F7D5 /* ExampleBackgroundContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBackgroundContentView.swift; sourceTree = "<group>"; };
+		E81FA87920CDA13D0074F7D5 /* ExampleBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBouncesContentView.swift; sourceTree = "<group>"; };
+		E81FA87A20CDA13D0074F7D5 /* ExampleAnimateTipsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAnimateTipsContentView.swift; sourceTree = "<group>"; };
+		E81FA87B20CDA13D0074F7D5 /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
+		E81FA87C20CDA13D0074F7D5 /* ExampleHighlightableContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleHighlightableContentView.swift; sourceTree = "<group>"; };
+		E81FA87D20CDA13D0074F7D5 /* ExampleTipsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTipsContentView.swift; sourceTree = "<group>"; };
+		E81FA87E20CDA13D0074F7D5 /* ExampleIrregularityContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleIrregularityContentView.swift; sourceTree = "<group>"; };
+		E81FA88620CDA1890074F7D5 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pop.framework; sourceTree = "<group>"; };
+		E81FA88E20CDBB8E0074F7D5 /* welcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +67,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81FA88720CDA1890074F7D5 /* pop.framework in Frameworks */,
+				E81FA88A20CDABDA0074F7D5 /* pop.framework in Frameworks */,
+				95E1C3B8F9ED4E9C38AA5ED9 /* Pods_ESTabBarController_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CDEB781A83A2A5096AF5DD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E81FA88620CDA1890074F7D5 /* pop.framework */,
+				8627B82853790B4BA3FD5436 /* Pods_ESTabBarController_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8755A99B23AA39B93C07771 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24206C14F6136208F57B4021 /* Pods-ESTabBarController_Demo.debug.xcconfig */,
+				63B85D9CA1F49B9254D95650 /* Pods-ESTabBarController_Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E81FA85920CD9CD70074F7D5 = {
 			isa = PBXGroup;
 			children = (
+				E81FA87720CDA13D0074F7D5 /* Content */,
 				E81FA86420CD9CD70074F7D5 /* ESTabBarController_Demo */,
 				E81FA86320CD9CD70074F7D5 /* Products */,
+				B8755A99B23AA39B93C07771 /* Pods */,
+				6CDEB781A83A2A5096AF5DD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +116,7 @@
 		E81FA86420CD9CD70074F7D5 /* ESTabBarController_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				E81FA88D20CDBB730074F7D5 /* worldCup */,
 				E81FA86520CD9CD70074F7D5 /* AppDelegate.swift */,
 				E81FA86720CD9CD70074F7D5 /* ViewController.swift */,
 				E81FA86920CD9CD70074F7D5 /* Main.storyboard */,
@@ -64,6 +127,28 @@
 			path = ESTabBarController_Demo;
 			sourceTree = "<group>";
 		};
+		E81FA87720CDA13D0074F7D5 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				E81FA87820CDA13D0074F7D5 /* ExampleBackgroundContentView.swift */,
+				E81FA87920CDA13D0074F7D5 /* ExampleBouncesContentView.swift */,
+				E81FA87A20CDA13D0074F7D5 /* ExampleAnimateTipsContentView.swift */,
+				E81FA87B20CDA13D0074F7D5 /* ExampleBasicContentView.swift */,
+				E81FA87C20CDA13D0074F7D5 /* ExampleHighlightableContentView.swift */,
+				E81FA87D20CDA13D0074F7D5 /* ExampleTipsContentView.swift */,
+				E81FA87E20CDA13D0074F7D5 /* ExampleIrregularityContentView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		E81FA88D20CDBB730074F7D5 /* worldCup */ = {
+			isa = PBXGroup;
+			children = (
+				E81FA88E20CDBB8E0074F7D5 /* welcomeScreen.swift */,
+			);
+			path = worldCup;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E81FA87420CD9CD90074F7D5 /* Build configuration list for PBXNativeTarget "ESTabBarController_Demo" */;
 			buildPhases = (
+				33D503596463E251780025E6 /* [CP] Check Pods Manifest.lock */,
 				E81FA85E20CD9CD70074F7D5 /* Sources */,
 				E81FA85F20CD9CD70074F7D5 /* Frameworks */,
 				E81FA86020CD9CD70074F7D5 /* Resources */,
+				8853317BB511F2AE6316AC98 /* [CP] Embed Pods Frameworks */,
+				E81FA88C20CDABDA0074F7D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +218,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33D503596463E251780025E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ESTabBarController_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8853317BB511F2AE6316AC98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ESTabBarController_Demo/Pods-ESTabBarController_Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESTabBarController_Demo/Pods-ESTabBarController_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E81FA85E20CD9CD70074F7D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81FA88520CDA13D0074F7D5 /* ExampleIrregularityContentView.swift in Sources */,
+				E81FA88320CDA13D0074F7D5 /* ExampleHighlightableContentView.swift in Sources */,
+				E81FA88420CDA13D0074F7D5 /* ExampleTipsContentView.swift in Sources */,
 				E81FA86820CD9CD70074F7D5 /* ViewController.swift in Sources */,
 				E81FA86620CD9CD70074F7D5 /* AppDelegate.swift in Sources */,
+				E81FA88220CDA13D0074F7D5 /* ExampleBasicContentView.swift in Sources */,
+				E81FA88120CDA13D0074F7D5 /* ExampleAnimateTipsContentView.swift in Sources */,
+				E81FA87F20CDA13D0074F7D5 /* ExampleBackgroundContentView.swift in Sources */,
+				E81FA88F20CDBB8E0074F7D5 /* welcomeScreen.swift in Sources */,
+				E81FA88020CDA13D0074F7D5 /* ExampleBouncesContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +413,17 @@
 		};
 		E81FA87520CD9CD90074F7D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24206C14F6136208F57B4021 /* Pods-ESTabBarController_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCPU83AAPV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ESTabBarController_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +437,17 @@
 		};
 		E81FA87620CD9CD90074F7D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B85D9CA1F49B9254D95650 /* Pods-ESTabBarController_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCPU83AAPV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ESTabBarController_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
