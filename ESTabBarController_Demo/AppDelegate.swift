@@ -20,35 +20,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
+        window?.backgroundColor = UIColor.white
+        
         let tabBarController = ESTabBarController()
         tabBarController.delegate = self
         tabBarController.title = "Irregularity"
         tabBarController.tabBar.shadowImage = UIImage(named: "transparent")
         tabBarController.tabBar.backgroundImage = UIImage(named: "background_dark")
-        tabBarController.shouldHijackHandler = {
-            tabbarController, viewController, index in
-            if index == 2{
-                return true
-            }
-            return false
-        }
-        tabBarController.didHijackHandler = {
-            [weak tabBarController] tabbarController, viewController, index in
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                let alertController = UIAlertController.init(title: nil, message: nil, preferredStyle: .actionSheet)
-                let takePhotoAction = UIAlertAction(title: "Take a photo", style: .default, handler: nil)
-                alertController.addAction(takePhotoAction)
-                let selectFromAlbumAction = UIAlertAction(title: "Select from album", style: .default, handler: nil)
-                alertController.addAction(selectFromAlbumAction)
-                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-                alertController.addAction(cancelAction)
-                tabBarController?.present(alertController, animated: true, completion: nil)
-            }
-        }
+//        tabBarController.shouldHijackHandler = {
+//            tabbarController, viewController, index in
+//            if index == 2{
+//                return true
+//            }
+//            return false
+//        }
+//        tabBarController.didHijackHandler = {
+//            [weak tabBarController] tabbarController, viewController, index in
+//
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+//                let alertController = UIAlertController.init(title: nil, message: nil, preferredStyle: .actionSheet)
+//                let takePhotoAction = UIAlertAction(title: "Take a photo", style: .default, handler: nil)
+//                alertController.addAction(takePhotoAction)
+//                let selectFromAlbumAction = UIAlertAction(title: "Select from album", style: .default, handler: nil)
+//                alertController.addAction(selectFromAlbumAction)
+//                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+//                alertController.addAction(cancelAction)
+//                tabBarController?.present(alertController, animated: true, completion: nil)
+//            }
+//        }
         let v01 = UIViewController()
         let v02 = UIViewController()
-        let v03 = UIViewController()
+        let v03 = welcomeScreen()
         let v04 = UIViewController()
         let v05 = UIViewController()
 //        let v1 = UIViewController()
