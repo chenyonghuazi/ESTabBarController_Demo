@@ -13,11 +13,16 @@ class guessVC: UIViewController {
     
     var tableV = UITableView()
     var segementControl = UISegmentedControl()
+    
+    var sections:[String:[String:String]] = [String:[String:String]]()
+    let day1:[String:String] = ["lakeluniya.png":"bettys.png"]
+    let day2:[String:String] = ["bettys.png":"royalSociety.png"]
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        sections["2018-02-12周一"] = day1
+        sections["2018-03-01周四"] = day2
         setNavigationControllerBackground()
-        
+        self.tableV.reloadData()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +31,14 @@ class guessVC: UIViewController {
         tabBarController.isHidden = false
         setSegementedControl()
         
-        // Do any additional setup after loading the view.
+        // tableView
+        registerCell()
         tableV.delegate = self
+        tableV.dataSource = self
         self.view.addSubview(tableV)
         tableV.translatesAutoresizingMaskIntoConstraints = false
         
+        constraintForTableView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,15 +73,15 @@ class guessVC: UIViewController {
         
         let items = ["16强","8强","4强","决赛"]
 //        var segementControl = UISegmentedControl()
-        let segementControl = UISegmentedControl(items: items)
+        segementControl = UISegmentedControl(items: items)
         
-        let backgroundColor = UIColor.init(red: 8/255, green: 76/255, blue: 107/255, alpha: 1)
+        let backgroundColor = UIColor.init(red: 0/255, green: 83/255, blue: 109/255, alpha: 1)
         segementControl.backgroundColor = backgroundColor
         segementControl.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .selected)
         segementControl.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.lightGray], for: .normal)
         segementControl.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.clear], for: .highlighted)
         segementControl.selectedSegmentIndex = 0
-        
+        segementControl.tintColor = .clear
         segementControl.removeBorders()
         self.view.addSubview(segementControl)
         segementControl.translatesAutoresizingMaskIntoConstraints = false
@@ -86,13 +94,66 @@ class guessVC: UIViewController {
     }
 }
 extension guessVC:UITableViewDelegate, UITableViewDataSource{
+    func registerCell(){
+        self.tableV.register(guessVCTableCell.self, forCellReuseIdentifier: "guessCell")
+        self.tableV.reloadData()
+    }
+    
+    func constraintForTableView(){
+        guard let tabBarController = self.tabBarController?.tabBar else{return}
+        self.tableV.anchor(top: self.segementControl.bottomAnchor, leading: self.view.leadingAnchor, bottom: self.view.bottomAnchor, trailing: self.view.trailingAnchor)
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "guessCell") as! guessVCTableCell
+        if indexPath.section == 0{
+            cell.leftScore.text = "0"
+            cell.rightScore.text = "1"
+            if let leftImage = sections["2018-02-12周一"]?.keys.first{
+                
+                print(leftImage)
+                cell.leftTeamImage = leftImage
+            }
+            if let rightImage = sections["2018-02-12周一"]?.values.first{
+                print(rightImage)
+                cell.rightTeamImage = rightImage
+            }
+            
+        }else if indexPath.section == 1{
+            cell.leftScore.text = "0"
+            cell.rightScore.text = "0"
+            cell.leftTeamImage = sections["2018-03-01周四"]?.keys.first
+            cell.rightTeamImage = sections["2018-03-01周四"]?.values.first
+        }
+        
         return cell
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0{
+            return sections.keys.first
+        }else{
+            let sectionskey = Array(sections.keys)
+            
+            return sectionskey[1]
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
     }
     
     

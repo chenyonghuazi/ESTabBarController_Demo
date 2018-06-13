@@ -25,6 +25,7 @@
 		E81FA88B20CDABDA0074F7D5 /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E81FA88620CDA1890074F7D5 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E81FA88F20CDBB8E0074F7D5 /* welcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA88E20CDBB8E0074F7D5 /* welcomeScreen.swift */; };
 		E81FA89120CDC0110074F7D5 /* guessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FA89020CDC0110074F7D5 /* guessVC.swift */; };
+		E84AE4FF20D08AD600C5BE88 /* guessVCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84AE4FE20D08AD600C5BE88 /* guessVCTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,7 @@
 		E81FA88620CDA1890074F7D5 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pop.framework; sourceTree = "<group>"; };
 		E81FA88E20CDBB8E0074F7D5 /* welcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeScreen.swift; sourceTree = "<group>"; };
 		E81FA89020CDC0110074F7D5 /* guessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guessVC.swift; sourceTree = "<group>"; };
+		E84AE4FE20D08AD600C5BE88 /* guessVCTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guessVCTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		E81FA86420CD9CD70074F7D5 /* ESTabBarController_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				E84AE4FD20D08AA600C5BE88 /* cell */,
 				E81FA88D20CDBB730074F7D5 /* worldCup */,
 				E81FA86520CD9CD70074F7D5 /* AppDelegate.swift */,
 				E81FA86720CD9CD70074F7D5 /* ViewController.swift */,
@@ -150,6 +153,14 @@
 				E81FA89020CDC0110074F7D5 /* guessVC.swift */,
 			);
 			path = worldCup;
+			sourceTree = "<group>";
+		};
+		E84AE4FD20D08AA600C5BE88 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E84AE4FE20D08AD600C5BE88 /* guessVCTableCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E81FA89120CDC0110074F7D5 /* guessVC.swift in Sources */,
+				E84AE4FF20D08AD600C5BE88 /* guessVCTableCell.swift in Sources */,
 				E81FA88520CDA13D0074F7D5 /* ExampleIrregularityContentView.swift in Sources */,
 				E81FA88320CDA13D0074F7D5 /* ExampleHighlightableContentView.swift in Sources */,
 				E81FA88420CDA13D0074F7D5 /* ExampleTipsContentView.swift in Sources */,
